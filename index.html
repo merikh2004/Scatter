@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatter!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div id="app">
+        <div class="doors">
+            <div class="door">
+                <div class="boxes"></div>
+            </div>
+            <div class="door">
+                <div class="boxes"></div>
+            </div>
+            <div class="door">
+                <div class="boxes"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="spinner">SPIN</button>
+            <button id="reseter">RESET</button>
+        </div>
+
+        <p class="info"></p>
+        <div class="border">
+            <div class="betting">
+                <div>
+                    <label for="potMoney">Add to Pot Money (Max 100k):</label>
+                    <input type="number" id="potMoney" min="0" max="100000">
+                    <button id="addMoney">Add Money</button>
+                </div>
+                <div>
+                    <p>Current Pot: <span id="currentPot">0</span></p>
+                    <p>Current Bet: <span id="currentBet">0</span></p>
+                </div>
+                <div>
+                    <button id="allIn">All In</button>
+                    <button id="minBet">Min Bet (500)</button>
+                    <label for="customBet">Custom Bet:</label>
+                    <input type="number" id="customBet" min="500">
+                    <button id="placeCustomBet">Place Bet</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>"Remember, with every spin, you're playing for fun. Keep it light and know when to walk away!"</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
